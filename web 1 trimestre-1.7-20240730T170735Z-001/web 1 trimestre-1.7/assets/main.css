@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: pink;
+}
+
+div.div_de_cima{
+    background-color: rgb(246, 209, 215);
+    border-radius: 10px;
+    width: 99vw;
+    height: 5vh;
+    margin: 1px;
+}
+
+div{
+    display: flex;
+  
+}
+
+nav.perfil{
+    background-color: rgb(198, 98, 115);
+    border-radius: 10px;
+    flex-grow: 2;
+    width: 20vw;
+    height: 20vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2vw;
+    padding: 1vw;
+    overflow: hidden;
+}
+
+nav.perfil img{
+border-radius: 101px;
+width: 10vw;
+
+}
+
+main{ 
+    background-color: rgb(255, 174, 188);
+    border-radius: 10px;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 90vmin;
+    padding: 20px;
+    gap: 30px;
+    flex-direction: column;
+    margin: 10px;
+    overflow: auto;
+}     
+img.foto {
+    border-radius: 10px;
+    width: 20vw;
+    height: 15vw;
+    transition: 0.5s;
+}
+
+img.foto:hover{
+    transform: scale(1.1);
+ box-shadow: 10px 10px 10px palevioletred;
+}
+img.fotodrogada{
+    border-radius: 10px;
+    width: 20vw;
+    height: 15vw;
+    transition: 0.5s;
+    filter: blur(50px) grayscale(100%);
+    opacity: 5;
+    cursor: pointer;
+    transition: 2s;
+}
+img:hover{
+    filter: blur(0px) grayscale(0);
+    opacity: 1 ;
+}
+
+
+
